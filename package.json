@@ -15,7 +15,7 @@
     "google play"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pokiiio/node-red-contrib-google-play-scraper/issues"
   },
