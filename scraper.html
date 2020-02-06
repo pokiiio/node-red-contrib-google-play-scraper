@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    RED.nodes.registerType('scraper', {
+        category: 'function',
+        color: '#c0deed',
+        defaults: {
+            name: {
+                value: ''
+            },
+            appId: {
+                value: ''
+            },
+            lang: {
+                value: ''
+            },
+            country: {
+                value: ''
+            },
+            sort: {
+                value: ''
+            },
+            num: {
+                value: 100
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'white-globe.png',
+        label: function () {
+            return this.name || 'scraper';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="scraper">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-appId"><i class="icon-tag"></i>appId</label>
+        <input type="text" id="node-input-appId" placeholder="appId">
+    </div>
+    <div class="form-row">
+        <label for="node-input-lang"><i class="icon-tag"></i>lang</label>
+        <input type="text" id="node-input-lang" placeholder="lang">
+    </div>
+    <div class="form-row">
+        <label for="node-input-country"><i class="icon-tag"></i>country</label>
+        <input type="text" id="node-input-country" placeholder="country">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sort"><i class="icon-tag"></i>sort</label>
+        <input type="text" id="node-input-sort" placeholder="sort">
+    </div>
+    <div class="form-row">
+        <label for="node-input-num"><i class="icon-tag"></i>num</label>
+        <input type="text" id="node-input-num" placeholder="num">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="scraper">
+    <p>Get reviews on Google Play.</p>
+</script>
