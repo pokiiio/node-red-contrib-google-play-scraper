@@ -40,5 +40,5 @@ module.exports = function (RED) {
                 });
         });
     }
-    RED.nodes.registerType("scraper", ScraperNode);
+    RED.nodes.registerType("Google Play Review", ScraperNode);
 }
